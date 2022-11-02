@@ -39,7 +39,7 @@ async function start() {
   });
 
   // Criação de Bolão
-  fastify.post('/pool', async (request, reply) => {
+  fastify.post('/pools', async (request, reply) => {
     const createPoolBody = z.object({
       title: z.string()
     })
